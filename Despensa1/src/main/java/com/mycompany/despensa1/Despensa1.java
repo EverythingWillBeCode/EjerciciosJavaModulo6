@@ -39,6 +39,8 @@ public class Despensa1 {
         try {
             con = DriverManager.getConnection(url,user,pass);
             stmt = (Statement) con.createStatement();
+
+            
             while (!salida) {
                 
                 System.out.print("Ingrese el nombre del producto (o ingrese 0 para salir): ");
